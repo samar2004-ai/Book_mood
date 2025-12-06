@@ -1,0 +1,206 @@
+/* --- COULEURS ET TYPOGRAPHIE GLOBALE --- */
+
+body {
+    /* Fond de page qui imite une bibliothèque ancienne ou un mur crème */
+    background: #e9e4d9; 
+    font-family: "Georgia", serif; /* Police classique qui rappelle la lecture */
+    color: #36454F; /* Gris foncé pour le texte, plus doux que le noir pur */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px 0;
+}
+
+h2 {
+    /* Séparateur stylisé pour les titres */
+    border-bottom: 2px solid #C89F81; 
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    color: #7B3F00; /* Marron foncé/sépia pour les titres */
+    font-family: "Times New Roman", serif;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+/* --- STRUCTURE PRINCIPALE DU CONTENEUR --- */
+
+.container {
+    width: 90%;
+    max-width: 750px; /* Légèrement plus large pour l'esthétique */
+    margin: 30px auto;
+    padding: 30px 40px;
+    /* Papier ancien/parchemin */
+    background: #fff7e6; 
+    /* Effet d'élévation léger pour donner du volume */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 0 0 1px #d4c4a8; 
+    border-radius: 12px;
+}
+
+/* --- ÉLÉMENTS DU FORMULAIRE (QUIZ) --- */
+
+label { 
+    display: block; 
+    margin-top: 20px; 
+    font-weight: bold; 
+    color: #4b3d2b; /* Couleur du titre de la question */
+    font-size: 1.1em;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px 0;
+    /* Champ qui s'harmonise avec le fond de livre */
+    background: #f7f3e8; 
+    border: 1px solid #d4c4a8;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #C89F81; /* Bordure plus visible au focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(200, 159, 129, 0.5);
+}
+
+/* --- BOUTON D'ACTION --- */
+
+button {
+    background: #C89F81; /* Couleur bois/cuir */
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background 0.3s, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #b68f70; 
+    transform: translateY(-1px);
+}
+
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #d4c4a8; 
+}
+
+
+.placeholder {
+    color: #999; 
+}
+
+.placeholder {
+    display: none; 
+}
+
+select {
+    color: #36454F; 
+}
+
+select:valid {
+    color: #36454F; 
+}
+
+select:invalid {
+    color: #999; 
+}
+
+
+.books-grid {
+    display: grid;
+    /* 3 colonnes sur les grands écrans, 2 sur tablette, 1 sur mobile */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.book {
+    display: flex; /* Utilisé pour l'ancienne structure, maintenu ici pour les éléments internes */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    /* Fond de carte de livre */
+    background: #ffffff; 
+    border: 1px solid #e0ddd3;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    width: 100%;
+    max-width: 150px; 
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre pour donner du relief à la couverture */
+    margin-bottom: 10px;
+}
+
+.book h4 {
+    color: #7B3F00;
+    margin: 10px 0 5px 0;
+    font-size: 1.1em;
+}
+
+.book p {
+    color: #555;
+    font-style: italic;
+    margin: 0 0 15px 0;
+}
+
+.book a {
+    
+    background: #4B3D2B; 
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.book a:hover {
+    background: #7B3F00;
+}
+
+
+
+a {
+    color: #C89F81;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navigation-links {
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    text-align: left;
+}
+
+.return-home-link {
+    
+    font-weight: bold;
+    color: #4B3D2B; 
+}
+
+.return-home-link:hover {
+    text-decoration: underline;
+    color: #C89F81; 
+}

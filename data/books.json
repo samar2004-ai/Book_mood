@@ -1,0 +1,323 @@
+[
+  {
+    "id": 1,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": "Romance",
+    "moods": ["calm", "romantic", "happy", "reflective"],
+    "url": "https://www.gutenberg.org/ebooks/1342",
+    "cover": "https://www.gutenberg.org/cache/epub/1342/pg1342.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 2,
+    "title": "Sherlock Holmes: The Adventures",
+    "author": "Arthur Conan Doyle",
+    "genre": "Mystery",
+    "moods": [ "curious", "mystery", "tense"],
+    "url": "https://www.gutenberg.org/ebooks/1661",
+    "cover": "https://www.gutenberg.org/cache/epub/1661/pg1661.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 3,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Drama",
+    "moods": ["sad", "reflective", "melancholic"],
+    "url": "https://www.gutenberg.org/ebooks/64317",
+    "cover": "https://www.gutenberg.org/cache/epub/64317/pg64317.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 4,
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "genre": "Adventure",
+    "moods": ["adventurous", "curious"],
+    "url": "https://www.gutenberg.org/ebooks/2701",
+    "cover": "https://www.gutenberg.org/cache/epub/2701/pg2701.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 5,
+    "title": "Alice in Wonderland",
+    "author": "Lewis Carroll",
+    "genre": "Fantasy",
+    "moods": ["happy", "curious", "imaginative"],
+    "url": "https://www.gutenberg.org/ebooks/11",
+    "cover": "https://www.gutenberg.org/cache/epub/11/pg11.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 6,
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "genre": "Horror",
+    "moods": ["mystery", "dark", "tense"],
+    "url": "https://www.gutenberg.org/ebooks/345",
+    "cover": "https://www.gutenberg.org/cache/epub/345/pg345.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 7,
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "genre": "Horror",
+    "moods": ["dark", "sad", "reflective"],
+    "url": "https://www.gutenberg.org/ebooks/84",
+    "cover": "https://www.gutenberg.org/cache/epub/84/pg84.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 8,
+    "title": "Les Misérables",
+    "author": "Victor Hugo",
+    "genre": "Drama",
+    "moods": ["sad", "emotional", "reflective"],
+    "url": "https://www.gutenberg.org/ebooks/135",
+    "cover": "https://www.gutenberg.org/cache/epub/135/pg135.cover.medium.jpg",
+    "language": "fr",
+    "length": "long"
+  },
+  {
+    "id": 9,
+    "title": "Kalila wa Dimna",
+    "author": "Ibn Al-Muqaffaʿ",
+    "moods": ["curious", "happy", "reflective"],
+    "url": "https://dlib.nyu.edu/aco/ark:/88435/k3569483c",
+    "cover": "images/kalila_dimna.jpg",
+    "language": "ar",
+    "length": "long"
+  },
+  {
+    "id": 10,
+    "title": "Siddhartha",
+    "author": "Hermann Hesse",
+    "genre": "Philosophy / Fiction",
+    "moods": ["calm", "thinking", "reflective"],
+    "url": "https://www.gutenberg.org/ebooks/2500",
+    "cover": "https://www.gutenberg.org/cache/epub/2500/pg2500.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 11,
+    "title": "The Odyssey",
+    "author": "Homer",
+    "genre": "Epic / Classic",
+    "moods": ["adventurous", "epic", "reflective"],
+    "url": "https://www.gutenberg.org/ebooks/1727",
+    "cover": "https://www.gutenberg.org/cache/epub/1727/pg1727.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 12,
+    "title": "White Fang",
+    "author": "Jack London",
+    "genre": "Adventure",
+    "moods": ["adventurous", "survival", "curious"],
+    "url": "https://www.gutenberg.org/ebooks/910",
+    "cover": "https://www.gutenberg.org/cache/epub/910/pg910.cover.medium.jpg",
+    "language": "en",
+    "length": "medium"
+  },
+  {
+    "id": 13,
+    "title": "The Scarlet Letter",
+    "author": "Nathaniel Hawthorne",
+    "genre": "Historical / Drama",
+    "moods": ["melancholic", "reflective", "sad"],
+    "url": "https://www.gutenberg.org/ebooks/33",
+    "cover": "https://www.gutenberg.org/cache/epub/33/pg33.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 14,
+    "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+    "author": "Robert Louis Stevenson",
+    "genre": "Horror / Mystery",
+    "moods": ["dark", "mystery", "tense"],
+    "url": "https://www.gutenberg.org/ebooks/43",
+    "cover": "https://www.gutenberg.org/cache/epub/43/pg43.cover.medium.jpg",
+    "language": "en",
+    "length": "short"
+  },
+  {
+    "id": 15,
+    "title": "Twenty Thousand Leagues Under the Sea",
+    "author": "Jules Verne",
+    "genre": "Adventure",
+    "moods": ["adventurous", "curious", "epic"],
+    "url": "https://www.gutenberg.org/ebooks/164",
+    "cover": "https://www.gutenberg.org/cache/epub/164/pg164.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 16,
+    "title": "Journey to the Center of the Earth",
+    "author": "Jules Verne",
+    "genre": "Adventure",
+    "moods": ["adventurous", "curious", "excited"],
+    "url": "https://www.gutenberg.org/ebooks/18857",
+    "cover": "https://www.gutenberg.org/cache/epub/18857/pg18857.cover.medium.jpg",
+    "language": "en",
+    "length": "long"
+  },
+  {
+    "id": 17,
+    "title": "Le Petit Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "genre": "Fable / Fiction",
+    "moods": ["reflective", "curious", "happy"],
+    "url": "https://www.planetebook.com/free-ebooks/le-petit-prince.pdf",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/9/9f/Le_Petit_Prince_(cover).jpg",
+    "language": "fr",
+    "length": "short"
+  },
+  {
+    "id": 18,
+    "title": "The Metamorphosis",
+    "author": "Franz Kafka",
+    "genre": "Drama / Fiction",
+    "moods": ["reflective", "dark", "curious"],
+    "url": "https://www.gutenberg.org/ebooks/5200",
+    "cover": "https://www.gutenberg.org/cache/epub/5200/pg5200.cover.medium.jpg",
+    "language": "en",
+    "length": "short"
+  },
+  {
+    "id": 19,
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "genre": "Strategy / Philosophy",
+    "moods": [ "thinking", "reflective"],
+    "url": "https://www.gutenberg.org/ebooks/132",
+    "cover": "https://www.gutenberg.org/cache/epub/132/pg132.cover.medium.jpg",
+    "language": "en",
+    "length": "short"
+  },
+  {
+    "id": 20,
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "genre": "Philosophy",
+    "moods": ["calm", "reflective", "thinking"],
+    "url": "https://www.gutenberg.org/ebooks/2680",
+    "cover": "https://www.gutenberg.org/cache/epub/2680/pg2680.cover.medium.jpg",
+    "language": "en",
+    "length": "medium"
+  },
+  {
+    "id": 21,
+    "title": "كليلة و دمنة",
+    "author": "ابن المقفع",
+    "moods": ["curious","reflective","moral"],
+    "url": "https://kwd.hypotheses.org/124", 
+    "cover": "images/kalila_dimna_classic.jpg",
+    "language": "ar",
+    "length": "long"
+  },
+  {
+    "id": 22,
+    "title": "الإمتاع والمؤانسة",
+    "author": "أبو حيان التوحيدي",
+    "moods": ["reflective","philosophical","emotional"],
+    "url": "https://shamela.ws/", 
+    "cover": "images/imtāʿ_w_‑_muʾānasa.jpg",
+    "language": "ar",
+    "length": "long"
+  },
+  {
+    "id": 23,
+    "title": "رسالة الغفران",
+    "author": "أبي العلاء المعري",
+    "moods": ["dark","reflective","philosophical"],
+    "url": "https://shamela.ws/", 
+    "cover": "images/risalat_al‑ghufran.jpg",
+    "language": "ar",
+    "length": "short"
+  },
+  {
+    "id": 24,
+    "title": "الأغاني",
+    "author": "أبو الفرج الأصفهاني",
+    "moods": ["historical","cultural","reflective"],
+    "url": "https://shamela.ws/", 
+    "cover": "images/al‑aghani.jpg",
+    "language": "ar",
+    "length": "long"
+  },
+  {
+    "id": 25,
+    "title": "البخلاء",
+    "author": "جحا”  or  “حتى أبو الفضل عبد الله بن المقفع (selon édition)",
+    "moods": ["satirical","light","humorous"],
+    "url": "https://shamela.ws/", 
+    "cover": "images/al‑bukhala.jpg",
+    "language": "ar",
+    "length": "short"
+  },
+  {
+    "id": 26,
+    "title": "ألف ليلة وليلة",
+    "author": "مجهول / تجاريد تراثية",
+    "moods": ["fantasy","adventurous","curious"],
+    "url": "https://dlib.nyu.edu/aco/browse-by-category/", 
+    "cover": "images/alf_layla_w_layla.jpg",
+    "language": "ar",
+    "length": "long"
+  },
+  {
+    "id": 27,
+    "title": "مختارات من الشعر العربي القديم",
+    "author": "مجموعة مؤلفين",
+    "moods": ["reflective","emotional","classic"],
+    "url": "https://dlib.nyu.edu/aco/browse-by-category/", 
+    "cover": "images/old_arabic_poems.jpg",
+    "language": "ar",
+    "length": "medium"
+  },
+  {
+    "id": 28,
+    "title": "ديوان المتنبي",
+    "author": "المتنبي",
+    "moods": ["poetic","powerful","reflective"],
+    "url": "https://shamela.ws/", 
+    "cover": "images/diwan_al‑mutanabi.jpg",
+    "language": "ar",
+    "length": "medium"
+  },
+  {
+    "id": 29,
+    "title": "مقامات بديع الزمان الهمذاني",
+    "author": "بديع الزمان الهمذاني",
+    "moods": ["satirical","curious","cultural"],
+    "url": "https://shamela.ws/", 
+    "cover": "images/maqamat_hamdani.jpg",
+    "language": "ar",
+    "length": "long"
+  },
+  {
+    "id": 30,
+    "title": "رسائل الغزالي",
+    "author": "أبو حامد الغزالي",
+    "moods": ["philosophical","reflective","calm"],
+    "url": "https://shamela.ws/", 
+    "cover": "images/ghazali_letters.jpg",
+    "language": "ar",
+    "length": "long"
+  }
+
+
+]
