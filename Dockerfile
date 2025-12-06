@@ -8,3 +8,4 @@ COPY . /var/www/html/
 
 # Donner permissions
 RUN chown -R www-data:www-data /var/www/html/
+EXPOSE 80

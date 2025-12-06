@@ -61,7 +61,7 @@
                 <button type="submit">Créer le compte</button>
             </form>
             <p class="register-link-container">
-                Déjà un compte ? <a href="login.php" class="register-link">Se connecter</a>
+                Déjà un compte ? <a href="index.php" class="register-link">Se connecter</a>
             </p>
 
         </div>
