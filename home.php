@@ -20,7 +20,7 @@
 
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="home.php" class="current-page">Accueil</a></li>
+                        <li><a href="index.php" class="current-page">Quiter</a></li>
                         <li><a href="recommendations.php" class="quiz-link">Quiz & Recommandations</a></li>
                     </ul>
                     <div class="ribbon-tail"></div>

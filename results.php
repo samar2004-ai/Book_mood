@@ -85,12 +85,13 @@ $results = array_slice($results, 0, $nombre_max_a_afficher);
 </head>
 
 <body>
-    <div class="container">
-        <a href="home.php" class="return-home-link">← Retour à l'Accueil</a>
-        |
-        <a href="recommendations.php">← Recommencer le Quiz</a>
-        |
-        <a href="index.php">← Quiter</a>
+    <div class="container results-container">
+        <div class="navigation-links">
+            <a href="home.php" class="return-home-link">← Retour à l'Accueil</a>
+
+            <a href="recommendations.php">Recommencer le Quiz</a>
+            <a href="index.php">Quiter</a>
+        </div>
         <hr>
         <h2>Livres recommandés pour ton mood :</h2>
         <?php if (count($results) > 0): ?>

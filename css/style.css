@@ -38,21 +38,34 @@ h2 {
 
 label { 
     display: block; 
-    margin-top: 20px; 
+    margin-top: 25px; /* Augmenter la marge au-dessus du label */
+    margin-bottom: 5px; /* Espace entre le label et le select/input */
     font-weight: bold; 
-    color: #4b3d2b; /* Couleur du titre de la question */
+    color: #4b3d2b; 
     font-size: 1.1em;
+    text-align: left; 
 }
 
 input, select {
-    width: 90%;
+    /* 🔑 S'ASSURER QUE LA LARGEUR EST DE 100% ET NON 90% */
+    width: 100%; 
     padding: 12px;
-    margin: 8px 0 15px 0;
+    margin: 0 0 18px 0; /* Réduire la marge en bas pour moins d'espace */
+    
+    /* Box-sizing pour inclure le padding dans la largeur de 100% */
+    box-sizing: border-box; 
+    
     background: #f7f3e8; 
     border: 1px solid #d4c4a8;
     border-radius: 6px;
     font-size: 1em;
     transition: border-color 0.3s;
+}
+
+/* 🔑 Correction Spécifique pour l'espacement des premiers champs (Nom, Email, Mdp) */
+/* Dans votre HTML, ces champs n'ont pas de <label>, donc leur espacement est géré ici */
+.login-box form input:nth-child(-n+3) {
+    margin-bottom: 25px; /* Ajouter plus d'espace sous Nom, Email, Mdp pour les séparer du titre */
 }
 
 input:focus, select:focus {
@@ -186,23 +199,70 @@ a:hover {
     text-decoration: underline;
 }
 
+/* --- NOUVEAU STYLE POUR LES LIENS DE NAVIGATION (dans results.php) --- */
+
 .navigation-links {
-    margin-bottom: 20px;
-    font-size: 0.95em;
-    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 30px; 
+    font-size: 0.9em;
+    padding: 5px 0;
+    
+    /* ACTIVER FLEXBOX */
+    display: flex;
+    /* Aligne les éléments aux extrémités de l'espace disponible */
+    justify-content: space-between; 
+    /* Retire le centrage */
+    text-align: left; 
 }
 
-.return-home-link {
+/* Nous allons ajuster la marge des liens pour qu'ils ne soient pas collés 
+   aux bords du .container, en supposant que le .container a déjà un padding. 
+   Si le .container a un padding de 40px, les marges doivent être nulles: */
+
+.navigation-links a {
+    /* Style Bouton/Étiquette */
+    display: inline-block;
+    padding: 8px 15px;
     
-    font-weight: bold;
+    /* MARGE À ZÉRO pour coller aux extrémités de la div .navigation-links */
+    margin: 0; 
+    
+    background: #f7f3e8; 
     color: #4B3D2B; 
+    border: 1px solid #d4c4a8; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.navigation-links a:hover {
+    background: #eae7dc; 
+    color: #7B3F00; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style spécifique pour le lien "Retour à l'Accueil" */
+.return-home-link {
+    background: #C89F81; 
+    color: white;
+    border: 1px solid #C89F81;
 }
 
 .return-home-link:hover {
-    text-decoration: underline;
-    color: #C89F81; 
+    background: #b68f70;
+    color: white;
 }
-/* --- HEADER STYLES --- */
+.separator {
+    color: #C89F81; /* Couleur d'accentuation */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 10px; /* Espace autour du point */
+    display: inline-block;
+    /* Aligner verticalement avec les boutons */
+    transform: translateY(2px); 
+}
 
 .main-header {
     background: #e9e4d9; /* Même couleur que le body */
@@ -315,9 +375,9 @@ color: #36454F;
     left: 0;
     width: 40%; 
     height: 100%;
-    background-color: rgba(75, 61, 43, 0.9); /* #4B3D2B (Marron foncé) avec légère transparence */
+    background-color: rgba(75, 61, 43, 0.9); 
     padding: 40px;
-    color: #F5EEDC; /* Texte clair sur fond foncé */
+    color: #F5EEDC; 
 }
 
 .hero-text-box h2 {
@@ -333,69 +393,155 @@ color: #36454F;
     margin-bottom: 30px;
 }
 
-/* Assurez-vous que le bouton est réutilisé (la classe .button) */
 .hero-text-box .button {
     background: #C89F81;
     text-transform: uppercase;
 }
-/* --- PAGE DE CONNEXION (LOGIN/REGISTER) --- */
 
-/* Conteneur principal pour centrer la boîte */
 .login-page-wrapper {
+    /* Utilise le style de fond fixe du body */
+    background-color: transparent; 
     min-height: 100vh; 
     display: flex;
     justify-content: center; 
     align-items: center; 
     padding: 20px;
-    
 }
 
+/* Boîte de connexion */
+/* Boîte de connexion */
 .login-box {
-    width: 90%;
-    max-width: 400px; 
-    padding: 40px;
+    width: 120%;
+    max-width: 800px; 
+    padding: 30px;
     background: #fff7e6; 
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px #d4c4a8; 
     text-align: center;
+    position: relative;
+    z-index: 10; 
+    
+    background-image: url('../images/books.png'); 
+
+    background-repeat: no-repeat; 
+    
+    background-position: right bottom; 
+    
+    background-size: 100px; 
+    
+    padding-bottom: 50px; 
 }
 
+/* Ajustement du titre du site pour le formulaire */
 .login-box .login-title {
     font-size: 2.5em; 
     margin-bottom: 20px;
+    color: #7B3F00; /* Marron Séphia */
+    font-family: 'Georgia', serif; 
 }
 
-
+/* Ajustement du titre h2 "Se connecter" */
 .login-box h2 {
-    color: #4B3D2B;
+    color: #4B3D2B; /* Marron foncé */
     border-bottom: none; 
     margin-top: 0;
     font-size: 1.6em;
     padding-bottom: 0;
+    text-align: center; /* S'assurer qu'il est centré */
 }
 
+/* Ligne de séparation */
 .login-hr {
     margin: 15px auto 30px auto;
     width: 50%;
+    border: 0;
+    border-top: 2px solid #C89F81; /* Ligne épaisse couleur bois */
 }
 
+/* Styles pour les champs input (réutilisation des styles existants) */
 .login-box input {
-    width: calc(100% - 24px); 
+    /* Utilise la règle générale, mais s'assure de la largeur */
+    width: 100%; 
+    box-sizing: border-box; /* Inclure le padding dans la largeur */
+    margin-bottom: 20px;
 }
 
+/* Bouton de connexion */
 .login-button {
     width: 100%; 
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 15px;
+    background: #4B3D2B; /* Utiliser le marron foncé pour le bouton principal */
+    font-size: 1.2em;
 }
 
+.login-button:hover {
+    background: #7B3F00; /* Assombrir légèrement au survol */
+}
 
+/* Lien pour créer un compte */
 .register-link-container {
     margin-top: 25px;
     font-size: 0.95em;
+    color: #555;
 }
 
 .register-link {
-    color: #7B3F00; 
+    color: #C89F81; /* Couleur d'accentuation bois/cuir pour le lien */
+    text-decoration: none;
     font-weight: bold;
 }
+
+.register-link:hover {
+    text-decoration: underline;
+}
+.login-background {
+    background-image: url('../images/books.jpeg'); 
+    
+    background-size: cover;
+    
+    background-position: center center; 
+    
+    background-attachment: fixed; 
+    
+    background-color: #36454F !important; 
+    
+    color: white; 
+}
+.results-container {
+    width: 90%;
+    max-width: 800px; /* Taille idéale pour un contenu centralisé (ajustez) */
+    margin: 40px auto;
+    padding: 60px 40px 40px 40px; /* Plus de padding en haut pour le numéro */
+    
+    background: #fff7e6; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px #d4c4a8; 
+    
+    /* EFFET PAPIER PARCHEMINÉ */
+    border: 2px dashed #d4c4a8; /* Bordure hachurée/pointillée */
+    border-radius: 20px; /* Bords arrondis */
+    position: relative; /* Nécessaire pour positionner le numéro */
+}
+/* Ajout de la section '3' au-dessus du titre (page de résultats) */
+.results-container::before {
+    content: "3"; 
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 3em; 
+    font-family: 'Times New Roman', serif;
+    color: #7B3F00; /* Couleur Séphia */
+    font-weight: bold;
+    opacity: 0.8;
+}
+/* Ajustement des titres H2 DANS le conteneur de résultats */
+.results-container h2 {
+    color: #4B3D2B;
+    margin-top: 5px; 
+    font-size: 1.6em;
+    text-align: left; /* Aligner le titre à gauche */
+    padding-left: 5px; /* Petit décalage pour l'esthétique */
+    border-bottom: none; /* Enlever la ligne de séparation sous le H2 */
+    margin-bottom: 20px;
+}
+

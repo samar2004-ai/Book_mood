@@ -7,7 +7,7 @@
     <title>Book Mood - Connexion</title>
 </head>
 
-<body>
+<body class="login-background">
 
     <div class="login-page-wrapper">
         <div class="login-box">
