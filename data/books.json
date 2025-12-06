@@ -10,17 +10,17 @@
     "language": "en",
     "length": "long"
   },
-   {
+  {
     "id": 24,
     "title": "الأغاني",
     "author": "أبو الفرج الأصفهاني",
     "moods": ["historical","cultural","reflective"],
-    "url": "https://shamela.ws/", 
-    "cover": "images/al‑aghani.jpg",
+    "url": "https://shamela.ws/",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Kitab_al-Aghani.jpg",
     "language": "ar",
     "length": "long"
   },
-   {
+  {
     "id": 10,
     "title": "Siddhartha",
     "author": "Hermann Hesse",
@@ -36,8 +36,8 @@
     "title": "كليلة و دمنة",
     "author": "ابن المقفع",
     "moods": ["curious","reflective","moral"],
-    "url": "https://kwd.hypotheses.org/124", 
-    "cover": "images/kalila_dimna_classic.jpg",
+    "url": "https://kwd.hypotheses.org/124",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/0/07/Kalilah_and_Dimnah_1330.jpg",
     "language": "ar",
     "length": "long"
   },
@@ -124,11 +124,10 @@
     "author": "Ibn Al-Muqaffaʿ",
     "moods": ["curious", "happy", "reflective"],
     "url": "https://dlib.nyu.edu/aco/ark:/88435/k3569483c",
-    "cover": "images/kalila_dimna.jpg",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/0/07/Kalilah_and_Dimnah_1330.jpg",
     "language": "ar",
     "length": "long"
   },
- 
   {
     "id": 11,
     "title": "The Odyssey",
@@ -239,14 +238,13 @@
     "language": "en",
     "length": "medium"
   },
-  
   {
     "id": 22,
     "title": "الإمتاع والمؤانسة",
     "author": "أبو حيان التوحيدي",
     "moods": ["reflective","philosophical","emotional"],
-    "url": "https://shamela.ws/", 
-    "cover": "images/imtāʿ_w_‑_muʾānasa.jpg",
+    "url": "https://shamela.ws/",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Imta_wa_almuanasa_1953.jpg",
     "language": "ar",
     "length": "long"
   },
@@ -255,19 +253,18 @@
     "title": "رسالة الغفران",
     "author": "أبي العلاء المعري",
     "moods": ["dark","reflective","philosophical"],
-    "url": "https://shamela.ws/", 
-    "cover": "images/risalat_al‑ghufran.jpg",
+    "url": "https://shamela.ws/",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Risalat_al-Ghufran_%281881_edition%29.jpg",
     "language": "ar",
     "length": "short"
   },
- 
   {
     "id": 25,
     "title": "البخلاء",
     "author": "جحا”  or  “حتى أبو الفضل عبد الله بن المقفع (selon édition)",
     "moods": ["satirical","light","humorous"],
-    "url": "https://shamela.ws/", 
-    "cover": "images/al‑bukhala.jpg",
+    "url": "https://shamela.ws/",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Kitab-al-bukhala.jpg",
     "language": "ar",
     "length": "short"
   },
@@ -276,8 +273,8 @@
     "title": "ألف ليلة وليلة",
     "author": "مجهول / تجاريد تراثية",
     "moods": ["fantasy","adventurous","curious"],
-    "url": "https://dlib.nyu.edu/aco/browse-by-category/", 
-    "cover": "images/alf_layla_w_layla.jpg",
+    "url": "https://dlib.nyu.edu/aco/browse-by-category/",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Alf_Layla_wa_Layla_volume_one.jpg",
     "language": "ar",
     "length": "long"
   },
@@ -286,8 +283,8 @@
     "title": "مختارات من الشعر العربي القديم",
     "author": "مجموعة مؤلفين",
     "moods": ["reflective","emotional","classic"],
-    "url": "https://dlib.nyu.edu/aco/browse-by-category/", 
-    "cover": "images/old_arabic_poems.jpg",
+    "url": "https://dlib.nyu.edu/aco/browse-by-category/",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Al-Tirmidhi.jpg",
     "language": "ar",
     "length": "medium"
   },
@@ -296,8 +293,8 @@
     "title": "ديوان المتنبي",
     "author": "المتنبي",
     "moods": ["poetic","powerful","reflective"],
-    "url": "https://shamela.ws/", 
-    "cover": "images/diwan_al‑mutanabi.jpg",
+    "url": "https://shamela.ws/",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Diwan_Al-Mutanabbi.jpg",
     "language": "ar",
     "length": "medium"
   },
@@ -306,8 +303,8 @@
     "title": "مقامات بديع الزمان الهمذاني",
     "author": "بديع الزمان الهمذاني",
     "moods": ["satirical","curious","cultural"],
-    "url": "https://shamela.ws/", 
-    "cover": "images/maqamat_hamdani.jpg",
+    "url": "https://shamela.ws/",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/0/05/Maqamat_of_al-Hariri_1237.jpg",
     "language": "ar",
     "length": "long"
   },
@@ -316,11 +313,9 @@
     "title": "رسائل الغزالي",
     "author": "أبو حامد الغزالي",
     "moods": ["philosophical","reflective","calm"],
-    "url": "https://shamela.ws/", 
-    "cover": "images/ghazali_letters.jpg",
+    "url": "https://shamela.ws/",
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Imta_wa_almuanasa_1953.jpg",
     "language": "ar",
     "length": "long"
   }
-
-
 ]
