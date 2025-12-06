@@ -21,7 +21,7 @@ $form_values = $defaults;
 
 <body>
     <div class="container">
-        <a href="index.php" class="return-home-link">← Retour à l'Accueil</a>
+        <a href="home.php" class="return-home-link">← Retour à l'Accueil</a>
         <h2>Choisis ton mood et réponds aux questions :</h2>
         <form action="results.php" method="POST">
 

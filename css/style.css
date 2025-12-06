@@ -21,16 +21,15 @@ h2 {
     text-align: center;
 }
 
-/* --- STRUCTURE PRINCIPALE DU CONTENEUR --- */
 
 .container {
-    width: 90%;
-    max-width: 750px; /* Légèrement plus large pour l'esthétique */
-    margin: 30px auto;
-    padding: 30px 40px;
-    /* Papier ancien/parchemin */
+    width: 100%;
+    max-width: 1500px; 
+    
+    margin: 20px auto;
+    padding: 30px 20px;
+    
     background: #fff7e6; 
-    /* Effet d'élévation léger pour donner du volume */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 0 0 1px #d4c4a8; 
     border-radius: 12px;
 }
@@ -46,10 +45,9 @@ label {
 }
 
 input, select {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     margin: 8px 0 15px 0;
-    /* Champ qui s'harmonise avec le fond de livre */
     background: #f7f3e8; 
     border: 1px solid #d4c4a8;
     border-radius: 6px;
@@ -203,4 +201,201 @@ a:hover {
 .return-home-link:hover {
     text-decoration: underline;
     color: #C89F81; 
+}
+/* --- HEADER STYLES --- */
+
+.main-header {
+    background: #e9e4d9; /* Même couleur que le body */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 0 40px;
+}
+
+/* Style du Titre/Logo */
+.site-title {
+    font-family: 'Great Vibes', cursive; /* Utiliser une police de style script pour l'effet "Book Mood" */
+    font-size: 3.5em;
+    color: #7B3F00; /* Couleur Séphia/Marron */
+    font-weight: normal;
+    margin: 0;
+}
+
+/* --- NAVIGATION / RUBAN --- */
+
+.main-nav {
+    display: flex;
+    position: relative;
+    padding-top: 0; 
+    height: 40px; /* Hauteur définie pour le ruban */
+    /* Assurez-vous que l'alignement est correct dans le header-top */
+    align-self: flex-end; 
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2; 
+    height: 100%;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #36454F;
+    padding: 0 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.2s;
+
+    display: flex;
+    align-items: center; 
+    height: 100%;
+}
+
+.main-nav li a:hover {
+    color: #C89F81;
+}
+
+.ribbon-tail {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    
+    width: 250px; 
+    height: 100%; 
+    z-index: 1;
+
+    
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 100%, 0 100%); 
+    
+    transform: translateY(0); 
+}
+
+.quiz-link {
+color: #36454F;
+    position: relative;
+    z-index: 3;
+    padding-right: 30px !important;
+}
+
+
+
+.hero-section {
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
+    
+    background-image: url('../images/book.jpeg'); 
+    
+    background-size: cover;
+    background-position: center top;
+    height: 400px; 
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Bloc de texte marron foncé à gauche */
+.hero-text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%; 
+    height: 100%;
+    background-color: rgba(75, 61, 43, 0.9); /* #4B3D2B (Marron foncé) avec légère transparence */
+    padding: 40px;
+    color: #F5EEDC; /* Texte clair sur fond foncé */
+}
+
+.hero-text-box h2 {
+    color: white; 
+    font-size: 2.5em;
+    border-bottom: 2px solid white;
+    text-align: left;
+    margin-top: 0;
+}
+
+.hero-text-box p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Assurez-vous que le bouton est réutilisé (la classe .button) */
+.hero-text-box .button {
+    background: #C89F81;
+    text-transform: uppercase;
+}
+/* --- PAGE DE CONNEXION (LOGIN/REGISTER) --- */
+
+/* Conteneur principal pour centrer la boîte */
+.login-page-wrapper {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    
+}
+
+.login-box {
+    width: 90%;
+    max-width: 400px; 
+    padding: 40px;
+    background: #fff7e6; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  
+    text-align: center;
+}
+
+.login-box .login-title {
+    font-size: 2.5em; 
+    margin-bottom: 20px;
+}
+
+
+.login-box h2 {
+    color: #4B3D2B;
+    border-bottom: none; 
+    margin-top: 0;
+    font-size: 1.6em;
+    padding-bottom: 0;
+}
+
+.login-hr {
+    margin: 15px auto 30px auto;
+    width: 50%;
+}
+
+.login-box input {
+    width: calc(100% - 24px); 
+}
+
+.login-button {
+    width: 100%; 
+    margin-top: 20px;
+    padding: 15px;
+}
+
+
+.register-link-container {
+    margin-top: 25px;
+    font-size: 0.95em;
+}
+
+.register-link {
+    color: #7B3F00; 
+    font-weight: bold;
 }
