@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Mood - Le Quiz</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="site-title">Book Mood</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Retour</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container results-container">
+        <div id="quiz-container">
+            <h2 id="quiz-header">Votre Voyage Littéraire commence...</h2>
+            
+            <form id="quizForm" class="fade-in">
+                <div class="quiz-step">
+                    <label>1. Si vous étiez dans un tableau, quel serait le style ?</label>
+                    <select id="q1">
+                        <option value="realiste">Une scène réaliste et détaillée</option>
+                        <option value="symbolique">Une œuvre abstraite et symbolique</option>
+                        <option value="chaotique">Une scène sombre et chaotique</option>
+                    </select>
+                </div>
+
+                <div class="quiz-step">
+                    <label>2. Quel genre d'histoire recherchez-vous aujourd'hui ?</label>
+                    <select id="q2">
+                        <option value="drame">Un drame humain profond</option>
+                        <option value="thriller">Un suspense qui coupe le souffle</option>
+                        <option value="epopee">Une épopée d'aventure</option>
+                    </select>
+                </div>
+
+                <div class="quiz-step">
+                    <label>3. Quelle est la saveur de votre curiosité actuelle ?</label>
+                    <select id="q3">
+                        <option value="mystere">Le goût du mystère</option>
+                        <option value="histoire">Le poids de l'Histoire</option>
+                        <option value="emotion">La force de l'émotion pure</option>
+                    </select>
+                </div>
+
+                <div class="quiz-step">
+                    <label>4. Dans quelle langue souhaitez-vous lire ?</label>
+                    <select id="language">
+                        <option value="fr">Français</option>
+                        <option value="en">Anglais</option>
+                    </select>
+                </div>
+
+                <div class="quiz-step">
+                    <label>5. De combien de temps disposez-vous ?</label>
+                    <select id="length">
+                        <option value="short">Un court instant (Petit livre)</option>
+                        <option value="medium">Une immersion modérée</option>
+                        <option value="long">Un long voyage (Pavé)</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="runSmartQuiz()" class="login-button" style="margin-top: 30px;">
+                    Révéler mes livres
+                </button>
+            </form>
+        </div>
+
+        <div id="results-step" style="display:none;" class="fade-in">
+            <h2 id="result-title">Vos pépites recommandées</h2>
+            <div id="results-grid" class="books-grid"></div>
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="location.reload()" class="return-home-link">Recommencer le Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Mood - Accueil</title>
+</head>
+
+<div id="bookModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalBody" class="modal-flex">
+            </div>
+    </div>
+</div>
+
+<body>
+    <header class="main-header">
+        <h1 class="site-title">Book Mood</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="quiz.html">Quiz Mood</a></li>
+                <li><a href="index.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 id="welcome">Bienvenue</h2>
+        <input type="text" id="search" placeholder="Rechercher un livre ou un auteur...">
+        
+        <div id="books" class="books-grid">
+            <p>Chargement des livres...</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('welcome').innerText = "Bienvenue, " + (localStorage.getItem('user') || "Lecteur") + " 👋";
+
+        let allBooks = [];
+        fetch('data/books.json')
+            .then(res => res.json())
+            .then(data => {
+                allBooks = data;
+                displayBooks(allBooks);
+            });
+
+        function displayBooks(list) {
+            const container = document.getElementById('books');
+            container.innerHTML = list.map(b => `
+                <div class="book">
+                    <img src="${b.cover}" alt="${b.title}">
+                    <h4>${b.title}</h4>
+                    <p>${b.author}</p>
+                    <a href="${b.url}" class="btn" target="_blank">Lire</a>
+                </div>
+            `).join('');
+        }
+
+        document.getElementById('search').oninput = (e) => {
+            const val = e.target.value.toLowerCase();
+            const filtered = allBooks.filter(b => b.title.toLowerCase().includes(val) || b.author.toLowerCase().includes(val));
+            displayBooks(filtered);
+        };
+    </script>
+</body>
+</html>

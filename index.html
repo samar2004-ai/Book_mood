@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Mood - Connexion</title>
+</head>
+<body class="login-background">
+    <div class="container" style="max-width: 450px; text-align: center;">
+        <h2>Bienvenue, Lecteur</h2>
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="Votre Email" required>
+        <input type="password" placeholder="Votre Mot de passe" required>
+        <button type="submit" class="login-button">Ouvrir la Bibliothèque</button>
+    </form>
+    <div class="register-link-container">
+        <a href="register.html">Créer un compte</a> • 
+        <a href="#">Mot de passe oublié ?</a>
+    </div>
+    </div>
+    <script>
+        document.getElementById('loginForm').onsubmit = (e) => {
+            e.preventDefault();
+            localStorage.setItem('user', document.getElementById('email').value.split('@')[0]);
+            window.location.href = 'home.html';
+        };
+    </script>
+</body>
+</html>

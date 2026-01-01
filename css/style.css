@@ -1,38 +1,119 @@
-/* --- COULEURS ET TYPOGRAPHIE GLOBALE --- */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600&display=swap');
 
+/* --- GLOBALS --- */
 body {
-    /* Fond de page qui imite une bibliothèque ancienne ou un mur crème */
     background: #e9e4d9; 
-    font-family: "Georgia", serif; /* Police classique qui rappelle la lecture */
-    color: #36454F; /* Gris foncé pour le texte, plus doux que le noir pur */
+    font-family: 'Poppins', sans-serif;
+    color: #36454F;
     line-height: 1.6;
     margin: 0;
-    padding: 20px 0;
 }
 
-h2 {
-    /* Séparateur stylisé pour les titres */
-    border-bottom: 2px solid #C89F81; 
-    padding-bottom: 10px;
-    margin-bottom: 25px;
-    color: #7B3F00; /* Marron foncé/sépia pour les titres */
-    font-family: "Times New Roman", serif;
-    font-size: 1.8em;
-    text-align: center;
-}
-
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
 
 .container {
-    width: 100%;
-    max-width: 1500px; 
-    
-    margin: 20px auto;
-    padding: 30px 20px;
-    
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 30px;
     background: #fff7e6; 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 0 0 1px #d4c4a8; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 0 1px #d4c4a8; 
     border-radius: 12px;
 }
+
+/* --- HEADER & NAVIGATION --- */
+.main-header {
+    background: #ffffff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.site-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: #7B3F00;
+    margin: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #4B3D2B;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+.main-nav a:hover { color: #C89F81; }
+
+/* --- GRID & BOOKS --- */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.book {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.book:hover { transform: translateY(-10px); }
+
+.book img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* --- FORMS & BUTTONS --- */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #d4c4a8;
+    border-radius: 6px;
+    background: #fdfaf3;
+}
+
+button, .btn {
+    background: #C89F81;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover { background: #7B3F00; }
+
+/* --- LOGIN SPECIFIC --- */
+.login-background {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/books.jpeg') center/cover fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- COULEURS ET TYPOGRAPHIE GLOBALE --- */
 
 /* --- ÉLÉMENTS DU FORMULAIRE (QUIZ) --- */
 
@@ -72,131 +153,6 @@ input:focus, select:focus {
     border-color: #C89F81; /* Bordure plus visible au focus */
     outline: none;
     box-shadow: 0 0 5px rgba(200, 159, 129, 0.5);
-}
-
-/* --- BOUTON D'ACTION --- */
-
-button {
-    background: #C89F81; /* Couleur bois/cuir */
-    color: white;
-    padding: 14px 25px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    transition: background 0.3s, transform 0.1s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-button:hover {
-    background: #b68f70; 
-    transform: translateY(-1px);
-}
-
-
-hr {
-    margin: 30px 0;
-    border: 0;
-    border-top: 1px solid #d4c4a8; 
-}
-
-
-.placeholder {
-    color: #999; 
-}
-
-.placeholder {
-    display: none; 
-}
-
-select {
-    color: #36454F; 
-}
-
-select:valid {
-    color: #36454F; 
-}
-
-select:invalid {
-    color: #999; 
-}
-
-
-.books-grid {
-    display: grid;
-    /* 3 colonnes sur les grands écrans, 2 sur tablette, 1 sur mobile */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    gap: 25px;
-    margin-top: 20px;
-}
-
-.book {
-    display: flex; /* Utilisé pour l'ancienne structure, maintenu ici pour les éléments internes */
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    /* Fond de carte de livre */
-    background: #ffffff; 
-    border: 1px solid #e0ddd3;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.book:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.book img {
-    width: 100%;
-    max-width: 150px; 
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre pour donner du relief à la couverture */
-    margin-bottom: 10px;
-}
-
-.book h4 {
-    color: #7B3F00;
-    margin: 10px 0 5px 0;
-    font-size: 1.1em;
-}
-
-.book p {
-    color: #555;
-    font-style: italic;
-    margin: 0 0 15px 0;
-}
-
-.book a {
-    
-    background: #4B3D2B; 
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.2s;
-}
-
-.book a:hover {
-    background: #7B3F00;
-}
-
-
-
-a {
-    color: #C89F81;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /* --- NOUVEAU STYLE POUR LES LIENS DE NAVIGATION (dans results.php) --- */
@@ -264,12 +220,6 @@ a:hover {
     transform: translateY(2px); 
 }
 
-.main-header {
-    background: #e9e4d9; /* Même couleur que le body */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
 .header-top {
     max-width: 1200px;
     margin: auto;
@@ -277,15 +227,6 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px 0 40px;
-}
-
-/* Style du Titre/Logo */
-.site-title {
-    font-family: 'Great Vibes', cursive; /* Utiliser une police de style script pour l'effet "Book Mood" */
-    font-size: 3.5em;
-    color: #7B3F00; /* Couleur Séphia/Marron */
-    font-weight: normal;
-    margin: 0;
 }
 
 /* --- NAVIGATION / RUBAN --- */
@@ -299,15 +240,6 @@ a:hover {
     align-self: flex-end; 
 }
 
-.main-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    z-index: 2; 
-    height: 100%;
-}
 
 .main-nav li a {
     text-decoration: none;
@@ -408,11 +340,9 @@ color: #36454F;
     padding: 20px;
 }
 
-/* Boîte de connexion */
-/* Boîte de connexion */
 .login-box {
-    width: 120%;
-    max-width: 800px; 
+    width: 90%;
+    max-width: 600px; 
     padding: 30px;
     background: #fff7e6; 
     border-radius: 12px;
@@ -420,19 +350,15 @@ color: #36454F;
     text-align: center;
     position: relative;
     z-index: 10; 
-    
-    background-image: url('../images/books.jpeg'); 
 
+    background-image: url('../images/books.jpeg'); 
     background-repeat: no-repeat; 
-    
     background-position: right bottom; 
-    
     background-size: 100px; 
-    
     padding-bottom: 50px; 
 }
+@keyframes slideDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
-/* Ajustement du titre du site pour le formulaire */
 .login-box .login-title {
     font-size: 2.5em; 
     margin-bottom: 20px;
@@ -440,17 +366,15 @@ color: #36454F;
     font-family: 'Georgia', serif; 
 }
 
-/* Ajustement du titre h2 "Se connecter" */
 .login-box h2 {
-    color: #4B3D2B; /* Marron foncé */
+    color: #4B3D2B; 
     border-bottom: none; 
     margin-top: 0;
     font-size: 1.6em;
     padding-bottom: 0;
-    text-align: center; /* S'assurer qu'il est centré */
+    text-align: center; 
 }
 
-/* Ligne de séparation */
 .login-hr {
     margin: 15px auto 30px auto;
     width: 50%;
@@ -458,11 +382,9 @@ color: #36454F;
     border-top: 2px solid #C89F81; /* Ligne épaisse couleur bois */
 }
 
-/* Styles pour les champs input (réutilisation des styles existants) */
 .login-box input {
-    /* Utilise la règle générale, mais s'assure de la largeur */
     width: 100%; 
-    box-sizing: border-box; /* Inclure le padding dans la largeur */
+    box-sizing: border-box; 
     margin-bottom: 20px;
 }
 
@@ -487,7 +409,7 @@ color: #36454F;
 }
 
 .register-link {
-    color: #C89F81; /* Couleur d'accentuation bois/cuir pour le lien */
+    color: #C89F81; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -495,34 +417,19 @@ color: #36454F;
 .register-link:hover {
     text-decoration: underline;
 }
-.login-background {
-    background-image: url('../images/books.jpeg'); 
-    
-    background-size: cover;
-    
-    background-position: center center; 
-    
-    background-attachment: fixed; 
-    
-    background-color: #36454F !important; 
-    
-    color: white; 
-}
 .results-container {
     width: 90%;
-    max-width: 800px; /* Taille idéale pour un contenu centralisé (ajustez) */
+    max-width: 800px; 
     margin: 40px auto;
-    padding: 60px 40px 40px 40px; /* Plus de padding en haut pour le numéro */
+    padding: 60px 40px 40px 40px; 
     
     background: #fff7e6; 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px #d4c4a8; 
     
-    /* EFFET PAPIER PARCHEMINÉ */
-    border: 2px dashed #d4c4a8; /* Bordure hachurée/pointillée */
-    border-radius: 20px; /* Bords arrondis */
-    position: relative; /* Nécessaire pour positionner le numéro */
+    border: 2px dashed #d4c4a8; 
+    border-radius: 20px; 
+    position: relative; 
 }
-/* Ajout de la section '3' au-dessus du titre (page de résultats) */
 .results-container::before {
     content: "3"; 
     position: absolute;
@@ -530,18 +437,94 @@ color: #36454F;
     left: 20px;
     font-size: 3em; 
     font-family: 'Times New Roman', serif;
-    color: #7B3F00; /* Couleur Séphia */
+    color: #7B3F00; 
     font-weight: bold;
     opacity: 0.8;
 }
-/* Ajustement des titres H2 DANS le conteneur de résultats */
 .results-container h2 {
     color: #4B3D2B;
     margin-top: 5px; 
     font-size: 1.6em;
-    text-align: left; /* Aligner le titre à gauche */
-    padding-left: 5px; /* Petit décalage pour l'esthétique */
-    border-bottom: none; /* Enlever la ligne de séparation sous le H2 */
+    text-align: left; 
+    padding-left: 5px; 
+    border-bottom: none; 
     margin-bottom: 20px;
 }
+.book {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
 
+.book:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 15px 30px rgba(123, 63, 0, 0.2);
+}
+
+/* Effet de fondu entre les pages */
+body {
+    animation: fadeInPage 0.8s ease-in-out;
+}
+@keyframes fadeInPage { from { opacity: 0; } to { opacity: 1; } }
+/* --- ANIMATIONS --- */
+.fade-in {
+    animation: fadeInAnimation 0.6s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- MODAL STYLE --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #fff7e6;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+    position: relative;
+    animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-flex {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #7B3F00;
+}
+
+/* --- BOUTON SMALL --- */
+.btn-small {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #C89F81;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
